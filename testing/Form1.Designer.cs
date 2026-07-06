@@ -29,9 +29,13 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             button1 = new Button();
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            guna2BorderlessForm2 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // button1
@@ -66,11 +70,34 @@
             guna2CheckBox1.UncheckedState.BorderThickness = 0;
             guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
             // 
+            // guna2BorderlessForm2
+            // 
+            guna2BorderlessForm2.ContainerControl = this;
+            guna2BorderlessForm2.DockIndicatorTransparencyValue = 0.6D;
+            guna2BorderlessForm2.TransparentWhileDrag = true;
+            // 
+            // guna2Button1
+            // 
+            guna2Button1.CustomizableEdges = customizableEdges1;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.Font = new Font("Segoe UI", 9F);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(200, 191);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Button1.Size = new Size(225, 56);
+            guna2Button1.TabIndex = 2;
+            guna2Button1.Text = "guna2Button1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(guna2Button1);
             Controls.Add(guna2CheckBox1);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
@@ -85,5 +112,7 @@
         private Button button1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm2;
     }
 }
